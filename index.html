@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
   <head>
-  <title>Slate Example Configuration</title>
-  <link rel='stylesheet' type='text/css' href='css/slate.min.css'>
-  <script src='js/slate.min.js'></script>
+  <title>Ola!</title>
+  <link rel='stylesheet' type='text/css' href='slate/dist/css/slate.min.css'>
+  <script src='slate/dist/js/slate.min.js'></script>
   <style>
   .title {
     padding: 15px 10px;
@@ -18,8 +18,8 @@
   </head>
 
   <body>
-    <h1 class='title'>Translations</h1>
-    
+    <h1 class='title'>Ola!</h1>
+
   <div class="item-container">
   <div class="item-container-header">Phrase 1</div>
   <div class="item-container-content">
@@ -194,21 +194,21 @@
   <script>
   function getConfigData() {
     var options = {
-      'p_1': document.getElementById("phrase-1"),
-      'p_2': document.getElementById("phrase-2"),
-      'p_3': document.getElementById("phrase-3"),
-      'p_4': document.getElementById("phrase-4"),
-      'p_5': document.getElementById("phrase-5"),
-      'p_6': document.getElementById("phrase-6"),
-      'p_7': document.getElementById("phrase-7"),
-      'p_8': document.getElementById("phrase-8"),
-      'p_9': document.getElementById("phrase-9"),
-      'p_10': document.getElementById("phrase-10"),
-      'p_11': document.getElementById("phrase-11"),
-      'p_12': document.getElementById("phrase-12"),
-      'p_13': document.getElementById("phrase-13"),
-      'p_14': document.getElementById("phrase-14"),
-      'p_15': document.getElementById("phrase-15")
+      'p_1': document.getElementById("phrase-1").value,
+      'p_2': document.getElementById("phrase-2").value,
+      'p_3': document.getElementById("phrase-3").value,
+      'p_4': document.getElementById("phrase-4").value,
+      'p_5': document.getElementById("phrase-5").value,
+      'p_6': document.getElementById("phrase-6").value,
+      'p_7': document.getElementById("phrase-7").value,
+      'p_8': document.getElementById("phrase-8").value,
+      'p_9': document.getElementById("phrase-9").value,
+      'p_10': document.getElementById("phrase-10").value,
+      'p_11': document.getElementById("phrase-11").value,
+      'p_12': document.getElementById("phrase-12").value,
+      'p_13': document.getElementById("phrase-13").value,
+      'p_14': document.getElementById("phrase-14").value,
+      'p_15': document.getElementById("phrase-15").value
     };
     console.log('Got options: ' + JSON.stringify(options));
     return options;
@@ -224,7 +224,7 @@
     }
     return defaultValue || false;
   }
- 
+
   var submitButton = document.getElementById('submit_button');
   submitButton.addEventListener('click', function() {
     console.log('Submit');
